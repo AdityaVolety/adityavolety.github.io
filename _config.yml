@@ -29,10 +29,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Aditya Volety"
+title: "{ Aditya Volety }"
+description: "Website of Aditya Volety, tech Professional. Opinions expressed are mine."
+keywords: "Aditya, Volety, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 
 ################
