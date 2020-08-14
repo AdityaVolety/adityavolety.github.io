@@ -1,59 +1,145 @@
+Skip to content
+Search or jump to…
 
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@AdityaVolety 
+AdityaVolety
+/
+adityavolety.github.io
+forked from le4ker/personal-jekyll-theme
+0
+0616
+Code
+Pull requests
+Actions
+Projects
+Security
+Insights
+Settings
+adityavolety.github.io
+/
+_includes
+/
+navigation.html
+ 
+
+Tabs
+
+8
+
+No wrap
+1
+​
+2
 <!-- Navigation Start -->
-
+3
+​
+4
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+5
   <div class="container">
+6
     <div class="navbar-header">
+7
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+8
         <i class="fa fa-bars"></i>
+9
       </button>
+10
       {% if page.section-type == "index" %}
+11
         <a class="navbar-brand page-scroll" href="#page-top">
+12
       {% else %}
+13
         <a class="navbar-brand" href="{{site.baseurl}}/">
+14
       {% endif %}
+15
           <div>
+16
             {% if site.black-favicon %}
+17
               <img src="{{site.baseurl}}{{ site.black-favicon }}" alt="">
+18
             {% endif %}
-	    {% if site.logo %}
-	      <img id="logo_nav" src="{{site.baseurl}}/{{site.logo}}" alt="{{ site.title }}" />
-	    {% endif %}
+19
+            {% if site.logo %}
+20
+              <img id="logo_nav" src="{{site.baseurl}}/{{site.logo}}" alt="{{ site.title }}" />
+21
+            {% endif %}
+22
               {{ site.title }}
+23
           </div>
+24
         </a>
+25
     </div>
+26
     <!-- Collect the nav links, forms, and other content for toggling -->
+27
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+28
       <ul class="nav navbar-nav">
+29
         {% if page.section-type == "index" %}
-
+30
+​
+31
           <!-- Scroll to section for each page in index -->
+32
           {% for p in site.pages_list %}
+33
             <li>
+34
               <a class="page-scroll" href="#{{ p[1] }}"> {{p[0]}} </a>
+35
             </li>
+36
           {% endfor %}
-
+37
+​
+38
         {% else %}
+39
           <!-- Blog, Post, Tag and Error pages -->
+40
           {% for p in site.pages_list %}
+41
             <li>
+42
             {% if p[1] == "latest-post" %}
+43
               {% if page.url == "/blog/index.html" | prepend: {{site.baseurl}} %}
+44
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
+45
               {% else %}
-                <a href="{{site.baseurl}}/blog/"> {{p[0]}} </a>
-              {% endif %}
-            {% else %}
-                <a href="{{site.baseurl}}/#{{ p[1] }}"> {{p[0]}} </a>
-            {% endif %}
-            </li>
-          {% endfor %}
-        {% endif %}
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Navigation End -->
+@AdityaVolety
+Commit changes
+Commit summary
+Update navigation.html
+Optional extended description
+Add an optional extended description…
+ Commit directly to the master branch.
+ Create a new branch for this commit and start a pull request. Learn more about pull requests.
+ 
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
